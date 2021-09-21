@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./content/css/style.css">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./content/img/logo.png" alt="Логотип Банка">
+        <div class="header__tel-numbers">
+            <a href="tel:8-800-100-5005">8-800-100-5005</a>
+            <a href="tel:+7(3452)522-000">+7(3452)522-000</a>
+        </div>
+    </header>
+    <nav class="subheader">
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Кредитные карты</a>
+        </div>
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Вклады</a>
+        </div>
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Дебетовая карта</a>
+        </div>
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Страхование</a>
+        </div>
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Друзья</a>
+        </div>
+        <div class="subheader__container">
+            <a href="#" class="subheader__menu">Интернет-банк</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Вклады</a></li>
+                <span>Калькулятор</span>
+            </ul>
+        </div>
+        <section class="calculator">
+            <h2 class="h2">Калькулятор</h2>
+            <form name="calculatorForm" id="calculatorForm">
+                <div class="deposit-data">
+                    <span class="calculator__info"><label for="date">Дата оформления вклада</label></span>
+                    <input class="calculator__input" name="datepicker" id="datepicker">
+                </div>
+                <div class="deposit-data">
+                    <span class="calculator__info"><label for="sum">Сумма вклада</label></span>
+                    <input class="calculator__input" type="number" name="sum" id="sum" min="1000" max="3000000">
+                    <div class="slider-container">
+                        <div class="slider" id="slider1"></div>
+                        <div class="slider-info">
+                            <span>1 тыс.руб.</span>
+                            <span>3 000 000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deposit-data">
+                    <span class="calculator__info"><label for="period">Срок вклада</label></span>
+                    <select class="calculator__input" name="period" id="period">
+                        <option value="365">1 год</option>
+                        <option value="730">2 года</option>
+                        <option value="1095">3 года</option>
+                        <option value="1460">4 года</option>
+                        <option value="1825">5 лет</option>
+                    </select>
+                </div>
+                <div class="deposit-data">
+                    <span class="calculator__info">Пополнение вклада</span>
+                    <input type="radio" name="refill" id="refill-no" value="refill-no" checked><label
+                        for="refill-no"><span>Нет</span></label>
+                    <input type="radio" name="refill" id="refill-yes" value="refill-yes"><label
+                        for="refill-yes"><span>Да</span></label>
+                </div>
+                <div class="deposit-data">
+                    <span class="calculator__info"><label for="refill-sum">Сумма пополнения вклада</label></span>
+                    <input class="calculator__input" type="number" name="refill-sum" id="refill-sum" min="1000"
+                        max="3000000">
+                    <div class="slider-container">
+                        <div class="slider" id="slider2"></div>
+                        <div class="slider-info">
+                            <span>1 тыс.руб.</span>
+                            <span>3 000 000</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="calculator__button" id="calcButton" type="submit">Рассчитать</button>
+                    <span class="calculator__result" id="calcRslt">Результат: </span><b><span id="calcSum"></span></b>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#" class="footer__menu">Кредитные карты</a>
+        <a href="#" class="footer__menu">Вклады</a>
+        <a href="#" class="footer__menu">Дебетовая карта</a>
+        <a href="#" class="footer__menu">Страхование</a>
+        <a href="#" class="footer__menu">Друзья</a>
+        <a href="#" class="footer__menu">Интернет-банк</a>
+    </footer>
+</body>
+    <script src="./content/js/jquery.js"></script>
+    <script src="./content/js/jquery-ui.min.js"></script>
+    <script src="./content/js/script.js"></script>
+</html>

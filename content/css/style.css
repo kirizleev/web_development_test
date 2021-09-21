@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "Europe";
+    src:
+    url(../../content/fonts/6509.woff) format('woff'),
+    url(../../content/fonts/6509.svg#Fiesta) format('svg'),
+    url(../../content/fonts/6509..eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+.header{
+    display: flex;
+    height: 118px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tel-numbers{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__tel-numbers a{
+    text-decoration: none;
+    color: #eb5017;
+    font-size: 18px;
+    font-family: "Europe", sans-serif;
+}
+
+.subheader{    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 43px;
+    border: 1px solid #e0e0e0;
+}
+
+.subheader__container{
+    display: flex;
+    width: -webkit-fill-available;
+    height: 43px;
+    background-color: #231f20;
+    border-right: solid 1px #eb5017;
+}
+
+.subheader :last-child{
+    border-right: none;
+}
+
+.subheader__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+.subheader__container :hover{
+    background-color: #eb5017;
+}
+
+.main{
+    min-height: calc(100vh - 236px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb li{
+    display: inline;
+    list-style: none;
+}
+
+.breadcrumb li a{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(35, 31, 32);
+}
+
+.breadcrumb span{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(35, 31, 32);
+}
+
+.breadcrumb li::after{
+    padding-left: 3px;
+    content: '-';
+}
+
+.calculator{
+    max-height: 378px;
+    max-width: 652px;
+    background-color: #f2f2f2;
+    margin-left: 30px;
+}
+
+.h2{
+    margin: 18px 0 33px 98px;
+    color: #eb5017;
+    font-size: 30px;
+    font-family: "Arial";
+    font-weight: normal;
+    display: inline-block;
+}
+
+.deposit-data{
+    margin-bottom: 20px;
+}
+
+.calculator__info{
+    display: inline-flex;
+    width: 200px;
+    justify-content: flex-end;
+    margin-right: 5px;
+    font-size: 14px;
+    font-family: "Arial";
+
+}
+
+.calculator__input{
+    box-sizing: content-box;
+    width: 88px;
+    height: 23px;
+    padding: 0;
+    border: 1px solid #cfd1d2;
+    margin-left: 22px;
+    margin-right: 19px;
+    font-size: 14px;
+    font-family: "Arial";
+    text-indent: 7px;
+}
+
+#refill-no{
+    margin-left: 22px;
+}
+
+.slider{
+    width: 240px;
+    height: 7px;
+    display: inline-block;
+    border: 1px solid #ffffff !important;
+    background-color: #212227;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.slider-container{
+    display: inline-grid;
+}
+
+.slider-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.slider-info span{
+    font-size: 10px;
+    font-family: "Verdana";
+    color: rgb(103, 103, 103);
+    font-style: italic;
+  }
+  
+
+.ui-slider .ui-slider-handle {
+    z-index: 1;
+    border: none;
+    border-radius: 5px;
+    height: 8px;
+    width: 9px;
+    top: -1px;
+    margin-left: -.3em;
+    background-image: url(../img/selector.png);
+}
+
+.ui-slider .ui-slider-range {
+	background: #7ba129;
+    height: 3px;
+    top: 2px;
+}
+
+.calculator__button{
+    width: 100px;
+    height: 33px;
+    border: 1px solid #c3c4c4;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    margin-right: 25px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(57, 83, 6);
+    font-weight: bold;
+    background-image: -moz-linear-gradient( 90deg, rgb(124,196,0) 0%, rgb(175,243,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(124,196,0) 0%, rgb(175,243,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(124,196,0) 0%, rgb(175,243,0) 100%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.calculator__result{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(57, 83, 6);
+}
+
+.footer{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 55px;
+    background-color: #231f20;
+    border: 1px solid #e0e0e0;
+}
+
+.footer__menu{
+    color: white;
+    margin-top: 13px;
+    margin-right: 26px;
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+.footer :first-child{
+    margin-left: 60px;
+}

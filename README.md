@@ -1,3 +1,3 @@
-# echo_test
+# IQonline_test
 
-https://kirizleev.github.io/echo_test/index.html
+https://kirizleev.github.io/kirizleev/web_development_test/index.html
